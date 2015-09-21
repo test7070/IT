@@ -81,7 +81,7 @@
 			q_cmbParse("cmbTrantype", q_getPara('sys.tran'));
 			q_cmbParse("cmbTaxtype", q_getPara('sys.taxtype'));
 			
-			var t_where = "where=^^ 1=1  group by post,addr^^";
+			var t_where = "where=^^ 1=1  ^^";
 			q_gt('custaddr', t_where, 0, 0, 0, "");
 			 
 			$('#btnOrdei').click(function () {
@@ -488,7 +488,7 @@
 			$('#txtOdate').focus();
 			$('#cmbTaxtype').val('3');
 			
-			var t_where = "where=^^ 1=1  group by post,addr^^";
+			var t_where = "where=^^ 1=1 ^^";
 			q_gt('custaddr', t_where, 0, 0, 0, "");
 		}
 		function btnModi() {
