@@ -868,7 +868,7 @@
 		        case 'txtProductno_':
 		   			$('#txtMount_'+b_seq).focus();
 		        break;
-		        case 'txtUno_':
+		        /*case 'txtUno_':
 		        	if(uno_uno){
 		        		uno_pno=$('#txtProductno_'+b_seq).val();
 		        		uno_product=$('#txtProduct_'+b_seq).val();
@@ -883,7 +883,7 @@
 		        		$('#txtUnit_'+b_seq).val(uno_unit);
 		        	}
 		   			
-		        break;
+		        break;*/
 		   	}
 		}
 		
