@@ -81,7 +81,7 @@
 			q_cmbParse("cmbTrantype", q_getPara('sys.tran'));
 			q_cmbParse("cmbTaxtype", q_getPara('sys.taxtype'));
 			
-			var t_where = "where=^^ 1=1  ^^";
+			var t_where = "where=^^ 1=0  ^^ stop=100";
 			q_gt('custaddr', t_where, 0, 0, 0, "");
 			 
 			$('#btnOrdei').click(function () {
@@ -112,7 +112,7 @@
 			
 			$('#txtCustno').change(function(){
 				if(!emp($('#txtCustno').val())){
-					var t_where = "where=^^ noa='" + $('#txtCustno').val() + "' ^^";
+					var t_where = "where=^^ noa='" + $('#txtCustno').val() + "' ^^ stop=100";
 					q_gt('custaddr', t_where, 0, 0, 0, "");
 				}
 			});
@@ -489,7 +489,7 @@
 			$('#txtOdate').focus();
 			$('#cmbTaxtype').val('3');
 			
-			var t_where = "where=^^ 1=1 ^^";
+			var t_where = "where=^^ 1=0 ^^ stop=100";
 			q_gt('custaddr', t_where, 0, 0, 0, "");
 		}
 		function btnModi() {
@@ -500,7 +500,7 @@
 			$('#txtOdate').focus();
 			
 			if(!emp($('#txtCustno').val())){
-				var t_where = "where=^^ noa='" + $('#txtCustno').val() + "' ^^";
+				var t_where = "where=^^ noa='" + $('#txtCustno').val() + "' ^^ stop=100";
 				q_gt('custaddr', t_where, 0, 0, 0, "");
 			}
 		}
@@ -623,7 +623,7 @@
 			switch (s1) {
 				case 'txtCustno':
 					if(!emp($('#txtCustno').val())){
-						var t_where = "where=^^ noa='" + $('#txtCustno').val() + "' ^^";
+						var t_where = "where=^^ noa='" + $('#txtCustno').val() + "' ^^ stop=100";
 						q_gt('custaddr', t_where, 0, 0, 0, "");
 					}
 				break;
